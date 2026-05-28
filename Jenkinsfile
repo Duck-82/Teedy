@@ -1,9 +1,6 @@
 pipeline {
     agent any
-    tools {
-        // 改成你 Jenkins 全局工具配置里的 Maven 名称
-        maven 'Maven' 
-    }
+    // 删掉 tools 这一段
     stages {
         stage('Maven 构建') {
             steps {
